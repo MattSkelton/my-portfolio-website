@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  max-width: 70rem;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  border: 1px solid white;
+  background-color: #2e3445;
+  box-shadow: 1px 0px 2px 1px #fff;
+}
+
+.img-container {
+  max-width: 30rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  margin: auto;
+}
+
+.centered {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #222733;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
