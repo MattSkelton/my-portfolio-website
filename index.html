@@ -1,82 +1,234 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="./style.css" rel="stylesheet">
-    <title> Matthew Skelton's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Skelton's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3497f25522.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+    <link rel="manifest" href="/fav/site.webmanifest">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
+    <div id="header">
+        <div id="particles-js">
 
-  <div class="container">
+            <div class="container">
+                <nav>
+                    <img src="images/simple logo.png" class="logo">
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                        <p>Front-End Developer</p>
+                        <h1>Hi, I'm <span>Matthew</span><br> Skelton From Tampa, FL</h1>
+                </div>
 
-    <h1> Welcome to Matthew Skelton's Portfolio </h1>
-    <h2> This website is under construction</h2>
-    <p> I'm still working on my Front-End skills </p>
-    <hr>
-    <p> Hello! My name is Matthew Skelton and this is my portfolio site. A little about me I am a dedicated and results-driven software developer with 1 year of experience inAutomation Testing and 6 months of Android App Development. I am adept at designing and implementing innovative software solutions to solve complex business problems. I have proven ability to collaborate effectively with cross-functional teams and adapt quickly to emerging technologies.</p>
-
-    <p> Here is my <a href="https://github.com/MattSkelton?tab=repositories"> GitHub Link</a> where I store the source code for some of my projects. </p>
-
-    <hr>
-
-    <h2> Contact Me</h2>
-    <p> Cell: 954-812-1015</p>
-    <p> Email: mjskelton77@gmail.com </p>
-
-    <hr>
-
-    <h2> Projects</h2>
-    <p>Below I will list some of my projects with screenshots and descriptions of each.</p>
-
-    <div class="centered">
-
-      <img src="pricingCard.png" alt=" Oops image isn't working!">
-      <p>A sample pricing card with responsive design <a href="https://github.com/MattSkelton/pricing-card-frontend-mentor-practice"> Github</a></p>
-
-      <br>
-
-      <p>This website <a href="https://github.com/MattSkelton/my-portfolio-website/tree/main"> Github</a></p>
+            </div>
+            
+        </div>
     </div>
-    <hr>
 
-    <h2> Professional Experience</h2>
-    <p>Below I will list the my Professional Experience as a Software Engineer ranging from App Development to Automation Testing.</p>
+<!--  ---About---  -->    
 
-    <ul>
-      <h2>Associate Consultant at Capgemini</h2>
-      <h4>July 2022 - September 2023</h4>
-      <li>Consulted clients for different tech projects and solutions</li>
-      <li>Worked with Baptist Health of South Florida on their Mobile Automation Testing Team</li>
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img class="mirrored-horizontal" src="images/user.jpg" alt="user image">
+                </div>
+                <div class="about-col-2"> 
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Dedicated and results-driven software developer with 1 year of professional experience in
+                        Automation Testing and 6 months of Android App Development. Adept at
+                        designing and implementing innovative software solutions to solve complex
+                        business problems. Proven ability to collaborate effectively with cross-functional 
+                        teams and adaot quickly to emerging technologies. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class ="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
 
-      <h2>Automation Tester at Baptist Health </h2>
-      <h4>September 2022 - September 2023</h4>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Automation Testing</span><br> Desiging Automation Scripts for Mobile App QA Testing</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br> Building Android/iOS apps</li>
+                        </ul>
 
-      <li>Developed and debugged the Baptist Health of South Florida PineApp Mobile Application utilizing Java, Appium and Webdriver. </li>
-      <li>Led research and development of integrating the mobile testing suite into AWS Device Farm.</li>
-      <li>Created defect tickets for any observed bugs while developing or running the testing suite.</li>
-      <li>Technologies Used: Java, Appium, Webdriver, Selenium, Android Studio, AWS Device Farm</li>
+                    </div>                   
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep 2022 - Sep 2023</span><br> Automation Testing at Baptist Health of South Florida</li>
+                            <li><span>July 2022 - Sep 2023</span><br> Associate Consultant at Capgemini assigned to projects with HSN/Qurate and Baptist Health of South Florida</li>
+                            <li><span>May 2021 - Jan 2022</span><br> Android App Developer at Ashley Furniture</li>
+                            <li><span>Nov 2020 - Jan 2022</span><br> VR and PC Game Developer at Resilience Inc.</li>
+                        </ul>
 
-      <h2>IT Developer Intern at Ashley Furniture Inc.</h2>
-      <h4>May 2021 - January 2022</h4>
+                    </div>
 
-      <li>Developed and debugged the Ashley Furniture E-Commerce Android Application utilizing Kotlin, third-party APIs and JDK.</li>
-      <li>Completed development on a new curbside delivery feature to allow users to select their form of delivery. </li>
-      <li>Worked in an Agile environment with Azure DevOps tickets and version control.</li>
-      <li>Technologies Used: Azure, Android Studio, Kotlin</li>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2018 - Jul 2022</span><br>BS in Computer Science from University of South Florida </li>
+                        </ul>
 
-      <h2>VR and PC Game Developer at Resilience Inc. </h2>
-      <h4>November 2020 - January 2022</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--                services                   -->
 
-      <li>Developed and designed Virtual Reality and PC games to teach kids Social Emotional Learning.</li>
-      <li>Worked in teams of three or independently to create two games:</li>
-      <li>Selena VR: A VR spacewalk from a space station to a ship as the space station is collapsing. Designed to help people learn to face their fears and anxiety</li>
-      <li>Dealing with Issues and Conflict: A 2D platformer following a knight trying to rescue his Queen.
-        Along the way he must collect fragments by answering questions developing the players conflict resolution skills.</li>
-      <li>Technologies Used: C#, Unity Game Engine</li>
-    </ul>
+<div id="services" >
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Elevate your online presence with my tailored web development solutions. As a skilled developer, I bring innovation and efficiency to every project, ensuring a seamless user experience and visually stunning interfaces. Let's collaborate to transform your ideas into a dynamic online reality.</p>
+                <a href="#contact">Learn more</a>
+            </div>
 
-    <button id="btn-1" class="my-btn" onclick="onClick()"> Click me </button>
-  </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>               
+                <h2>App Development</h2>
+                <p>Transform your app ideas into reality with my expert app development services. As a seasoned developer, I bring innovation and efficiency to every project, ensuring a seamless user experience and captivating interfaces. Let's collaborate to create dynamic and user-friendly mobile applications tailored to your unique vision.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Automation Testing</h2>
+                <p>Boost your software's reliability with expert automation testing. I specialize in creating efficient testing frameworks, ensuring seamless execution and identifying issues early in the development process. Elevate your application's quality and speed up release cycles by partnering with me for top-notch automation testing solutions.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--                 portfolio                 -->
+
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/tb2i.png">
+                <div class="layer">
+                    <h3>The Bridge to Independence Charity Website</h3>
+                    <p>The Bridge to Independence is an online platform empowering at-risk foster care adolescents</p>
+                    <a href="https://github.com/MattSkelton/TB2I"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>   
+
+            <div class="work"></div>   
+        </div>
+        <a href="https://github.com/MattSkelton?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
+<!--        contact         -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mjskelton77@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>954-812-1015</p>
+                <div class="social-icons">
+                    <a href="https://github.com/MattSkelton?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matthew-skelton-95b2b01a4/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/MatthewSkelton Resume.pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Matt.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+        
+    }   
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrYSVutkTftm5IBZ7bm_QsCX6xVG6acwm0QZNDQ4uSqg-a8fOOfVSdYCfB2O67yz5Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
 </body>
-
 </html>
