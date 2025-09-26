@@ -25,8 +25,6 @@
 
             <div class="container">
                 <nav>
-                    <img src="images/simple logo.png" class="logo">
-                    
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -37,6 +35,215 @@
                     </ul>
                     <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
+            </div>
+            
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Matthew</span><br> Skelton From Tampa, FL</h1>
+            </div>
+        </div>
+    </div>
+
+<!--  ---About---  -->    
+
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img class="mirrored-horizontal" src="images/user.jpg" alt="user image">
+                </div>
+                <div class="about-col-2"> 
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Dedicated and results-driven software developer with 3 years of professional experience 
+                        in Full Stack Web and App Development. Adept at designing and implementing innovative 
+                        software solutions to solve complex business problems. Proven ability to collaborate 
+                        effectively with cross-functional teams and adapt quickly to emerging technologies. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class ="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br> Building Android/iOS apps</li>
+                            <li><span>Automation Testing</span><br> Desiging Automation Scripts for Mobile App QA Testing</li>
+                        </ul>
+
+                    </div>                   
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mar 2024 - Current</span><br> Software Engineer at Iron EagleX</li>
+                            <li><span>Mar 2023 - Mar 2024</span><br> Software Engineer at Becton Dickinson (BD)</li>
+                            <li><span>Sep 2022 - Sep 2023</span><br> Software Engineer at Baptist Health of South Florida</li>
+                            <li><span>Sep 2022 - Sep 2023</span><br> Software Engineer at Baptist Health of South Florida</li>
+                            <li><span>July 2022 - Sep 2023</span><br> Associate Consultant at Capgemini assigned to projects with HSN/Qurate and Baptist Health of South Florida</li>
+                            <li><span>May 2021 - Jan 2022</span><br> Android App Developer at Ashley Furniture</li>
+                            <li><span>Nov 2020 - Jan 2022</span><br> VR and PC Game Developer at Resilience Inc.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2018 - Jul 2022</span><br>BS in Computer Science from University of South Florida </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--                services                   -->
+
+<div id="services" >
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Elevate your online presence with my tailored web development solutions. As a skilled developer, I bring innovation and efficiency to every project, ensuring a seamless user experience and visually stunning interfaces. Let's collaborate to transform your ideas into a dynamic online reality.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>               
+                <h2>App Development</h2>
+                <p>Transform your app ideas into reality with my expert app development services. As a seasoned developer, I bring innovation and efficiency to every project, ensuring a seamless user experience and captivating interfaces. Let's collaborate to create dynamic and user-friendly mobile applications tailored to your unique vision.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Automation Testing</h2>
+                <p>Boost your software's reliability with expert automation testing. I specialize in creating efficient testing frameworks, ensuring seamless execution and identifying issues early in the development process. Elevate your application's quality and speed up release cycles by partnering with me for top-notch automation testing solutions.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--                 portfolio                 -->
+
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maloney Lake House">
+                <div class="layer">
+                    <h3>Maloney Lake House</h3>
+                    <p>A beautiful lakehouse rental website featuring modern design and booking functionality</p>
+                    <a href="https://maloneylakehouse.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/tb2i.png">
+                <div class="layer">
+                    <h3>The Bridge to Independence Charity Website</h3>
+                    <p>The Bridge to Independence is an online platform empowering at-risk foster care adolescents</p>
+                    <a href="https://github.com/MattSkelton/TB2I" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>   
+
+            <div class="work"></div>   
+        </div>
+        <a href="https://github.com/MattSkelton?tab=repositories" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+
+<!--        contact         -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mjskelton77@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>954-812-1015</p>
+                <div class="social-icons">
+                    <a href="https://github.com/MattSkelton?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matthew-skelton-95b2b01a4/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/MatthewSkelton Resume.pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Matt.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+        
+    }   
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrYSVutkTftm5IBZ7bm_QsCX6xVG6acwm0QZNDQ4uSqg-a8fOOfVSdYCfB2O67yz5Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
                 <div class="header-text">
                         <p>Front-End Developer</p>
                         <h1>Hi, I'm <span>Matthew</span><br> Skelton From Tampa, FL</h1>
