@@ -340,9 +340,10 @@ nav ul li a:hover{
 
 .work-list{
     display:flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
     margin-top: 50px;
+    align-items: stretch;
 }
 
 .work{
@@ -353,6 +354,14 @@ nav ul li a:hover{
     transition: all 0.4s ease;
 }
 
+/* Make each work item take equal space and share the same height */
+.work{
+    flex: 1 1 calc(50% - 40px); /* two across layout */
+    min-width: 300px;
+    max-width: 720px;
+    height: 320px;
+}
+
 .work:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(124, 28, 159, 0.2);
@@ -360,9 +369,19 @@ nav ul li a:hover{
 
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
+    object-fit: cover;
     transition: transform 0.5s;
+}
+
+@media only screen and (max-width: 900px){
+    .work{
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 240px;
+    }
 }
 
 .layer{
